@@ -165,7 +165,7 @@ local function CreateGUI(title)
     end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sdhdbxub/nnsiejw/main/djhdi139431.lua"))()
+getgenv().LS="nn中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/ooohhhjj%20(1).txt"))()
     end)
 end
 local myTitle = "NN中心" 
