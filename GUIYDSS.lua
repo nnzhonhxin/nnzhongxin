@@ -90,7 +90,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(155, 155, 155)
-    agreeFrame.Text = "1.原作者:ghgj.\n 2.半缝合别骂.\n 3.更新时间:6月15日.\n 4.持续更新\n 5.nn脚本q群：263575982\n"
+    agreeFrame.Text = "1.原作者:ghgj.\n 2.纯缝合别骂.\n 3.更新时间:7月5日.\n 4.持续更新\n 5.nn脚本q群：246983979\n 6.更新内容：只多了个协议"
     agreeFrame.TextWrapped = true
 
     
@@ -165,7 +165,7 @@ local function CreateGUI(title)
     end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-getgenv().LS="nn中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/ooohhhjj%20(1).txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/NN.txt"))()
     end)
 end
 local myTitle = "NN中心" 
