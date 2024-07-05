@@ -1,6 +1,60 @@
-local library = loadstring(game:HttpGet("https://pastebin.com/raw/nBq2D86q"))()
-local window = library:new("nn中心1.0")
-local creds = window:Tab("信息",'16060333448')
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/nnzhonhxin/nnzhongxin/main/nm.lua"))()
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local KONGtime = "KongZhongXingNNzhongxinBy AA"
+local screenGui = Players.LocalPlayer:FindFirstChild(KONGtime)
+if not screenGui then
+    screenGui = Instance.new("ScreenGui")
+    screenGui.Name = KONGtime
+    screenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+    local watermarkLabel = Instance.new("TextLabel")
+    watermarkLabel.Name = "WatermarkLabel"
+    watermarkLabel.Size = UDim2.new(0, 100, 0, 20) -- 再调小一点
+    watermarkLabel.Position = UDim2.new(0.7, -50, 0, 10) -- 再向右移动
+    watermarkLabel.BackgroundTransparency = 1
+    watermarkLabel.TextScaled = true
+    watermarkLabel.Font = Enum.Font.SourceSansBold
+    watermarkLabel.Parent = screenGui
+
+    local gradient = Instance.new("UIGradient")
+    gradient.Parent = watermarkLabel
+end
+
+local watermarkLabel = screenGui:WaitForChild("WatermarkLabel")
+local gradient = watermarkLabel:WaitForChild("UIGradient")
+
+local function getRainbowColor(t)
+    local r = 0.5 * (1 + math.sin(2 * math.pi * t))
+    local g = 0.5 * (1 + math.sin(2 * math.pi * t + 2 * math.pi / 3))
+    local b = 0.5 * (1 + math.sin(2 * math.pi * t + 4 * math.pi / 3))
+    return Color3.new(r, g, b)
+end
+
+local startTime = tick()
+
+local function updateWatermark()
+    local time = os.date("*t")
+    local timeText = string.format("中国时间: %02d:%02d:%02d", time.hour, time.min, time.sec)
+    watermarkLabel.Text = timeText
+    local elapsedTime = tick() - startTime
+    local progress = (elapsedTime % 3) / 3
+    local color1 = getRainbowColor(progress)
+    local color2 = getRainbowColor((progress + 0.33) % 1)
+    local color3 = getRainbowColor((progress + 0.66) % 1)
+    gradient.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0, color1),
+        ColorSequenceKeypoint.new(0.5, color2),
+        ColorSequenceKeypoint.new(1, color3)
+    }
+end
+updateWatermark()
+
+RunService.RenderStepped:Connect(function()
+    updateWatermark()
+end)
+
+local window = library:new("nn中心1.1")
+local creds = window:Tab("信息",'18255612747')
 
 local bin = creds:section("采用云端更新",true)
     bin:Label("云端更新")
@@ -14,7 +68,8 @@ local bin = creds:section("玩家信息",true)
     bin:Label("你的注入器:"..identifyexecutor())
     
     local bin = creds:section("公告(必看)",true)
-    bin:Label("更新:啥也没更")
+    bin:Label("更新:河北唐县,内脏与黑火药,俄亥俄州")
+    bin:Label("更新时间:6月30日8：57")
     bin:Label("永久免费：免费")
     
 local credits = creds:section("关闭",true)
@@ -30,7 +85,7 @@ credits:Toggle("缩小", "", false, function(state)
     game:GetService("CoreGui")["frosty"]:Destroy()
 end)
     
-local creds = window:Tab("doors",'16060333448')
+local creds = window:Tab("doors",'18255612747')
 
 local credits = creds:section("脚本&模式",true)
 
@@ -46,7 +101,7 @@ end)
 credits:Button("脚本模式V2(只能在普通模式下运行，愚人节不行)",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/munciseek/DOORS-mode/main/ScripV2"))()
 end)
-local creds = window:Tab("sol’sRNG",'16060333448')
+local creds = window:Tab("sol’sRNG",'18255612747')
 local credits = creds:section("script",true)
 credits:Button("script1",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/upd/main/rng"))()
@@ -54,7 +109,7 @@ end)
 credits:Button("AL sol’sRNG",function()
     AL = "制作人员 之前风（AL）"loadstring(game:HttpGet("https://raw.githubusercontent.com/123hubd7gh/123hubd7gh/main/Sol's%20RNG"))()
 end)
-local creds = window:Tab("其他脚本",'16060333448')
+local creds = window:Tab("其他脚本",'18255612747')
 local credits = creds:section("脚本",true)
 credits:Button("情云",function()
     loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
@@ -86,4 +141,22 @@ end)
 
 credits:Button("龙脚本(能不能用我不知道)",function()
     loadstring(game:HttpGet("https://shz.al/~longshu/龙脚本"))()
+end)
+local creds = window:Tab("河北唐县",'18255612747')
+local credits = creds:section("脚本",true)
+credits:Button("河北唐县autofam",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Tang%20Country.lua"))()
+end)
+credits:Button("2",function()
+    lin = "作者林"lin ="林QQ群 747623342"loadstring(game:HttpGet("https://raw.githubusercontent.com/linnblin/lin/main/lin"))()
+end)
+local creds = window:Tab("内脏与黑火药",'18255612747')
+local credits = creds:section("脚本",true)
+credits:Button("1",function()
+    loadstring(game:HttpGet(("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\65\81\84\70\69\72\54\84"),true))()
+end)
+local creds = window:Tab("俄亥俄州",'18255612747')
+local credits = creds:section("脚本",true)
+credits:Button("1",function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\115\99\114\105\112\116\115\46\118\105\115\117\114\117\115\46\100\101\118\47\111\104\105\111\47\115\111\117\114\99\101"))()
 end)
