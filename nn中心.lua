@@ -87,13 +87,20 @@ end)
     
 local creds = window:Tab("doors",'18255612747')
 
-local credits = creds:section("脚本&模式",true)
+local credits = creds:section("脚本",true)
 
 credits:Button("MSdoors",function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
 end)
+credits:Button("不知道",function()
+    
+end)
 credits:Button("NBdoors(卡密：NB)",function()
     loadstring(game:HttpGet("https://github.com/DocYogurt/DOORS/raw/main/Loader.lua"))()
+end)
+local credits = creds:section("模式",true)
+credits:Button("硬核模式重置版",function()
+    loadstring(game:HttpGet("https://glot.io/snippets/gp5pu59o7f/raw"))()
 end)
 credits:Button("脚本模式v3",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/munciseek/Script-Mode/main/V3/Main-Scipt"))()
