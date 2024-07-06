@@ -55,6 +55,13 @@ end)
 
 local window = library:new("nn中心1.1.1")
 local creds = window:Tab("信息",'18255612747')
+local credits = creds:section("信息",true)
+credits:Button("复制官群",function()
+	setclipboard("246983979")
+end)
+credits:Button("复制作者QQ",function()
+	setclipboard("415139374")
+end)
 
 local bin = creds:section("采用云端更新",true)
     bin:Label("云端更新")
