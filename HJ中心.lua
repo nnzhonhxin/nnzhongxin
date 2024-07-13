@@ -284,7 +284,7 @@ Tab:AddButton ({
 })
 	local Section = Tab:AddSection({
 	Name = "脚本"
-}）
+})
 		Tab:AddButton ({
 	Name = "退休脚本",
 	Callback = function ()
