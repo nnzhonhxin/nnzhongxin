@@ -145,10 +145,17 @@ Tab:AddTextbox({
 			end
 })
 Tab:AddToggle({
-	Name = "夜视",
+	Name = "穿墙",
 	Default = false,
 	Callback = function(Value)
-		local plr = game:GetService("Players").LocalPlayerif plr.Character ~= nil then    if plr.Character:FindFirstChild("Humanoid") then        plr.Character.Humanoid:Destroy()        Instance.new("Humanoid",plr.Character)    endend
+		local plr = game:GetService("Players").LocalPlayer
+
+if plr.Character ~= nil then
+    if plr.Character:FindFirstChild("Humanoid") then
+        plr.Character.Humanoid:Destroy()
+        Instance.new("Humanoid",plr.Character)
+    end
+			end
 
 	end	
 })
@@ -211,6 +218,12 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "脚本"
+})
+Tab:AddButton ({
+	Name = "微山doors",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/weishanteam/Script/main/doors/WeiShan_Loader.lua"))()
+	end
 })
 Tab:AddButton ({
 	Name = "ms",
