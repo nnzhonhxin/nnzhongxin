@@ -152,24 +152,6 @@ HumanDied = true
 	end
 })
 Tab:AddButton ({
-	Name = "普通范围",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
-	end
-})
-Tab:AddButton ({
-	Name = "中级范围",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
-	end
-})
-Tab:AddButton ({
-	Name = "炒鸡范围",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
-	end
-})
-Tab:AddButton ({
 	Name = "infiniteyield指令",
 	Callback = function ()
 	 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
