@@ -110,10 +110,15 @@ Tab:AddButton ({
 })
 
 local Tab = Window:MakeTab({
-	Name = "免费获取无限r币",
-    game.Players.LocalPlayer:Kick('如果真的有获取无限币，那么你包封的，做人不要太贪心，天上不会掉馅饼只会掉陷阱')
+	Name = "免费获得无限r币",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "免贵获得无限r币",
+	Callback = function ()
+	 game.Players.LocalPlayer:Kick('要是真有免费获得无限r币的话，那么你包封的，做人不要太贪心天上不会掉馅饼只会掉陷阱')
+	end
 })
 local Tab = Window:MakeTab({
 	Name = "通用",
