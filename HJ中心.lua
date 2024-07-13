@@ -75,7 +75,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("更新","通用,doors,自然灾害,忍者传奇,力量传奇(忍者传只之更新到雷暴岛)")
+Tab:AddParagraph("更新","通用,doors,自然灾害,忍者传奇,力量传奇(忍者传奇只更新到雷暴岛)")
 Tab:AddParagraph("云端更新","wh")
 Tab:AddParagraph("永久免费")
 Tab:AddParagraph("提示","脚本中心") 
