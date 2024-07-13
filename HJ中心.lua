@@ -144,6 +144,29 @@ Tab:AddTextbox({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 			end
 })
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)		    		    
+
+		end
+
+	end	
+})
+Tab:AddToggle({
+	Name = "玩家进游戏看得见",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+	end	
+})
 Tab:AddButton ({
 	Name = "自杀",
 	Callback = function ()
@@ -155,12 +178,6 @@ Tab:AddButton ({
 	Name = "iy",
 	Callback = function ()
 	 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-	end
-})
-Tab:AddButton ({
-	Name = "玩家进来看得见",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 	end
 })
 local Section = Tab:AddSection({
