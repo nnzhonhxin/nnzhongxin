@@ -212,21 +212,6 @@ Tab:AddButton ({
 	end
 })
 local Section = Tab:AddSection({
-	Name = "脚本模式"
-})
-Tab:AddButton ({
-	Name = "脚本模式v3（超级好用）",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://raw.githubusercontent.com/munciseek/Script-Mode/main/V3/Main-Scipt"))()
-	end
-}）
-	Tab:AddButton ({
-	Name = "硬核模式重置版",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://glot.io/snippets/gp5pu59o7f/raw"))()
-	end
-})
-local Section = Tab:AddSection({
 	Name = "道具"
 })
 Tab:AddButton ({
