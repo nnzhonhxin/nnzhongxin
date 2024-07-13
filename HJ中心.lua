@@ -289,6 +289,7 @@ Tab:AddButton ({
 	Name = "退休脚本",
 	Callback = function ()
 	 TUIXUI="作者退休☯︎"JIAOBEN="永久免费缝合"qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+			end
 	end
 })
 		Tab:AddButton ({
