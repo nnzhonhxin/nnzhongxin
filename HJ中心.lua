@@ -152,15 +152,9 @@ HumanDied = true
 	end
 })
 Tab:AddButton ({
-	Name = "infiniteyield指令",
+	Name = "iy",
 	Callback = function ()
 	 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-	end
-})
-Tab:AddButton ({
-	Name = "飞车",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
 	end
 })
 Tab:AddButton ({
@@ -277,18 +271,6 @@ Tab:AddButton ({
 	Name = "XK脚本中心",
 	Callback = function ()
 	 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\88\75\46\84\88\84\34\41\41\40\41\10")()
-	end
-})
-		Tab:AddButton ({
-	Name = "小凌脚本",
-	Callback = function ()
-	 getgenv().XiaoLing = "Ling小凌脚本"loadstring(game:HttpGet("https://pastebin.com/raw/T95rdmkc"))()
-	end
-})
-		Tab:AddButton ({
-	Name = "绿脚本",
-	Callback = function ()
-	 loadstring(game:HttpGet("https://pastebin.com/raw/Esw6YQKR"))()
 	end
 })
 local Tab = Window:MakeTab({
