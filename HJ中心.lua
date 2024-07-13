@@ -1,19 +1,5 @@
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() 
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() 
- Notification:Notify( 
-     {Title = "SAY", Description = "纯逢合别骂我"}, 
-     {OutlineColor = Color3.fromRGB(155, 80, 80),Time = 3, Type = "image"}, 
-     {Image = "http://www.roblox.com/asset/?id=17240832325", ImageColor = Color3.fromRGB(255, 255, 255)} 
- )
- wait(1)
- local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() 
- local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() 
- Notification:Notify( 
-     {Title = "作者", Description = "by:ghgj"}, 
-     {OutlineColor = Color3.fromRGB(155, 80, 80),Time = 3, Type = "image"}, 
-     {Image = "http://www.roblox.com/asset/?id=17240832325", ImageColor = Color3.fromRGB(255, 255, 255)} 
- )
- wait(2 )
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
 local LBLG = Instance.new("ScreenGui", getParent)
