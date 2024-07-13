@@ -145,21 +145,6 @@ Tab:AddTextbox({
 			end
 })
 Tab:AddToggle({
-	Name = "穿墙",
-	Default = false,
-	Callback = function(Value)
-		local plr = game:GetService("Players").LocalPlayer
-
-if plr.Character ~= nil then
-    if plr.Character:FindFirstChild("Humanoid") then
-        plr.Character.Humanoid:Destroy()
-        Instance.new("Humanoid",plr.Character)
-    end
-			end
-
-	end	
-})
-Tab:AddToggle({
 	Name = "夜视",
 	Default = false,
 	Callback = function(Value)
@@ -179,6 +164,7 @@ Tab:AddToggle({
 	Name = "玩家进游戏看得见",
 	Default = false,
 	Callback = function(Value)
+
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 	end	
 })
