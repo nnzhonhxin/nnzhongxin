@@ -75,7 +75,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("更新","通用,doors,自然灾害,忍者传奇,力量传奇(忍者传奇只更新到雷暴岛)")
+Tab:AddParagraph("更新","通用,doors,自然灾害,忍者传奇,力量传奇,通用(忍者传奇只更新到雷暴岛)")
 Tab:AddParagraph("云端更新","wh")
 Tab:AddParagraph("永久免费")
 Tab:AddParagraph("提示","脚本中心") 
@@ -143,6 +143,14 @@ Tab:AddTextbox({
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 			end
+})
+Tab:AddToggle({
+	Name = "夜视",
+	Default = false,
+	Callback = function(Value)
+		local plr = game:GetService("Players").LocalPlayerif plr.Character ~= nil then    if plr.Character:FindFirstChild("Humanoid") then        plr.Character.Humanoid:Destroy()        Instance.new("Humanoid",plr.Character)    endend
+
+	end	
 })
 Tab:AddToggle({
 	Name = "夜视",
