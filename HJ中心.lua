@@ -160,13 +160,11 @@ Tab:AddToggle({
 
 	end	
 })
-Tab:AddToggle({
+Tab:AddButton ({
 	Name = "玩家进游戏看得见",
-	Default = false,
-	Callback = function(Value)
-
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
-	end	
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+	end
 })
 Tab:AddButton ({
 	Name = "自杀",
