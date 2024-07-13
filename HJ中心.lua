@@ -144,6 +144,49 @@ Tab:AddTextbox({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 			end
 })
+Tab:AddButton ({
+	Name = "自杀",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.Humanoid.Health=0
+HumanDied = true
+	end
+})
+Tab:AddButton ({
+	Name = "普通范围",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+	end
+})
+Tab:AddButton ({
+	Name = "中级范围",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+	end
+})
+Tab:AddButton ({
+	Name = "炒鸡范围",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+	end
+})
+Tab:AddButton ({
+	Name = "infiniteyield指令",
+	Callback = function ()
+	 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end
+})
+Tab:AddButton ({
+	Name = "飞车",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+	end
+})
+Tab:AddButton ({
+	Name = "玩家进来看得见",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+	end
+})
 local Section = Tab:AddSection({
 	Name = "飞行"
 })
@@ -165,6 +208,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Tab:AddSection({
+	Name = "脚本"
+})
 Tab:AddButton ({
 	Name = "ms",
 	Callback = function ()
@@ -187,6 +233,21 @@ Tab:AddButton ({
 	Name = "floor2(改地图)",
 	Callback = function ()
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/Floor%202%20Mod"))()
+	end
+})
+local Section = Tab:AddSection({
+	Name = "脚本模式"
+})
+Tab:AddButton ({
+	Name = "脚本模式v3（超级好用）",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/munciseek/Script-Mode/main/V3/Main-Scipt"))()
+	end
+}）
+	Tab:AddButton ({
+	Name = "硬核模式重置版",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://glot.io/snippets/gp5pu59o7f/raw"))()
 	end
 })
 local Section = Tab:AddSection({
@@ -214,6 +275,44 @@ Tab:AddButton ({
 	Name = "磁铁",
 	Callback = function ()
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+	end
+})
+	local Tab = Window:MakeTab({
+	Name = "其他脚本中心",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	local Section = Tab:AddSection({
+	Name = "脚本"
+}）
+		Tab:AddButton ({
+	Name = "退休脚本",
+	Callback = function ()
+	 TUIXUI="作者退休☯︎"JIAOBEN="永久免费缝合"qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+	end
+})
+		Tab:AddButton ({
+	Name = "nn中心",
+	Callback = function ()
+	 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\115\100\104\100\98\120\117\98\47\110\110\115\105\101\106\119\47\109\97\105\110\47\71\85\73\89\68\83\83\46\108\117\97\34\41\41\40\41\10")()
+	end
+})
+		Tab:AddButton ({
+	Name = "XK脚本中心",
+	Callback = function ()
+	 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\66\73\78\106\105\97\111\98\122\120\54\47\66\73\78\106\105\97\111\47\109\97\105\110\47\88\75\46\84\88\84\34\41\41\40\41\10")()
+	end
+})
+		Tab:AddButton ({
+	Name = "小凌脚本",
+	Callback = function ()
+	 getgenv().XiaoLing = "Ling小凌脚本"loadstring(game:HttpGet("https://pastebin.com/raw/T95rdmkc"))()
+	end
+})
+		Tab:AddButton ({
+	Name = "绿脚本",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://pastebin.com/raw/Esw6YQKR"))()
 	end
 })
 local Tab = Window:MakeTab({
