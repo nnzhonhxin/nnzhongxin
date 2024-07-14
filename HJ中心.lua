@@ -333,8 +333,9 @@ Tab:AddButton ({
 Tab:AddButton ({
 	Name = "神秘灵魂岛",
 	Callback = function ()
-	 
-	endgame.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(157.39967346191406, 39317.4765625, 146.05630493164062)
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(157.39967346191406, 39317.4765625, 146.05630493164062)
+	end
+			
 })
 	Tab:AddButton ({
 	Name = "冬季奇迹岛",
