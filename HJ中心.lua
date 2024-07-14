@@ -319,7 +319,7 @@ Tab:AddButton ({
 	end
 })
 Tab:AddButton ({
-	Name = ""远古炼狱岛,
+	Name = "远古炼狱岛",
 	Callback = function ()
 	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(166.48052978515625, 28256.201171875, 160.25828552246094)
 	end
