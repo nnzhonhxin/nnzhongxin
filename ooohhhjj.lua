@@ -1000,6 +1000,47 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
+	Name = "可怕的寿司",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "米饭和诺里"
+})
+Tab:AddButton ({
+	Name = "米饭和诺里",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-180.0427703857422, 8.905012130737305, 18.106494903564453)
+	end
+})
+local Section = Tab:AddSection({
+	Name = "鱼场"
+})
+Tab:AddButton ({
+	Name = "三文鱼",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-141.59385681152344, 4.864150524139404, 233.35406494140625)
+	end
+})
+Tab:AddButton ({
+	Name = "金枪鱼",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-156.87152099609375, 8.135756492614746, 267.52410888671875)
+	end
+})
+Tab:AddButton ({
+	Name = "洪水",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-202.3022918701172, 4.864147186279297, 270.55206298828125)
+	end
+})
+Tab:AddButton ({
+	Name = "e鱼",
+	Callback = function ()
+	 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-222.5277557373047, 4.864150524139404, 232.02337646484375)
+	end
+})
+local Tab = Window:MakeTab({
 	Name = "各大脚本",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
