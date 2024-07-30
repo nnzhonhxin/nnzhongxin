@@ -68,25 +68,36 @@ OrionLib:MakeNotification({
                 
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "HJ中心1.1", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.1", ConfigFolder = "NN中心"})
+local Window = OrionLib:MakeWindow({Name = "HJ中心1.2", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.1.1", ConfigFolder = "NN中心"})
 local Tab = Window:MakeTab({
 	Name = "主页",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7734053495",
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("更新","通用,doors,自然灾害,忍者传奇,力量传奇,通用(忍者传奇只更新到雷暴岛)")
+Tab:AddParagraph("更新","压力，巴掌模拟器，俄亥俄州，the raka")
 Tab:AddParagraph("云端更新","wh")
 Tab:AddParagraph("永久免费")
 Tab:AddParagraph("提示","脚本中心") 
 Tab:AddParagraph("你的注入器:"..identifyexecutor())
-Tab:AddParagraph("作者","作者不愿意透露自己")
+Tab:AddParagraph("作者","nn")
 Tab:AddParagraph("别骂")
 
 Tab:AddButton ({
-	Name = "复制",
+	Name = "复制作者QQ",
 	Callback = function ()
-	 setclipboard("没有东西")
+	 setclipboard("3762912107")
+	 OrionLib:MakeNotification({
+                    Name = "提示信息",
+                    Content = "你已复制，请在粘贴板中查看",
+                    Time = 3
+                })
+	end
+})
+Tab:AddButton ({
+	Name = "复制官群",
+	Callback = function ()
+	 setclipboard("460172391")
 	 OrionLib:MakeNotification({
                     Name = "提示信息",
                     Content = "你已复制，请在粘贴板中查看",
@@ -97,18 +108,18 @@ Tab:AddButton ({
 
 local Tab = Window:MakeTab({
 	Name = "免费获得无限r币",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton ({
 	Name = "免贵获得无限r币",
 	Callback = function ()
-	 game.Players.LocalPlayer:Kick('要是真有免费获得无限r币的话，那么你包封的，做人不要太贪心天上不会掉馅饼只会掉陷阱')
+	 game.Players.LocalPlayer:Kick('老第恭喜你被骗了😂')
 	end
 })
 local Tab = Window:MakeTab({
 	Name = "通用",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 
@@ -195,9 +206,64 @@ Tab:AddButton ({
 	end
 })
 local Tab = Window:MakeTab({
-	Name = "doors",
-	Icon = "rbxassetid://4483345998",
+	Name = "压力",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "Creepy client",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://github.com/Drop56796/CreepyEyeHub/blob/main/obfuscate.lua?raw=true"))()
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "doors",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+local Tab = Window:MakeTab({
+	Name = "巴掌模拟器",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "刷手套",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/thanhdat4461/BaconScripterLua/main/BallerFarm.lua"))()
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "俄亥俄州",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "1",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()----by 谨言
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "the rake",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "1",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://gist.githubusercontent.com/OtarDevv/49186047e758b9b263ec5a6583a99b4b/raw/bf8e3b74e48936ed310767314b42c17c1b210e86/Rake"))();
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "evade",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "1",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+	end
 })
 
 local Section = Tab:AddSection({
@@ -262,7 +328,7 @@ Tab:AddButton ({
 })
 local Tab = Window:MakeTab({
 	Name = "自然灾害模拟器",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton ({
@@ -273,7 +339,7 @@ Tab:AddButton ({
 })
 local Tab = Window:MakeTab({
 	Name = "忍者传奇",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton ({
@@ -399,7 +465,7 @@ Tab:AddButton ({
 })
 local Tab = Window:MakeTab({
 	Name = "力量传奇",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
 })
 Tab:AddButton ({
