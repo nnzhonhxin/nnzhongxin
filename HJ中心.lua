@@ -1,7 +1,7 @@
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() 
  local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() 
 
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -68,7 +68,7 @@ OrionLib:MakeNotification({
                 
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "HJ中心1.2", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.1.1", ConfigFolder = "NN中心"})
+local Window = OrionLib:MakeWindow({Name = "HJ中心1.2", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.2", ConfigFolder = "NN中心"})
 local Tab = Window:MakeTab({
 	Name = "主页",
 	Icon = "rbxassetid://7734053495",
@@ -217,11 +217,6 @@ Tab:AddButton ({
 	end
 })
 local Tab = Window:MakeTab({
-	Name = "doors",
-	Icon = "rbxassetid://7733779610",
-	PremiumOnly = false
-})
-local Tab = Window:MakeTab({
 	Name = "巴掌模拟器",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
@@ -264,6 +259,11 @@ Tab:AddButton ({
 	Callback = function ()
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
 	end
+})
+local Tab = Window:MakeTab({
+	Name = "doors",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
