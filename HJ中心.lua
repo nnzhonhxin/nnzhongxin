@@ -68,15 +68,15 @@ OrionLib:MakeNotification({
                 
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local Window = OrionLib:MakeWindow({Name = "HJ中心1.2", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.2", ConfigFolder = "NN中心"})
+local Window = OrionLib:MakeWindow({Name = "HJ中心1.3", HidePremium = false, SaveConfig =true,IntroText="HJ中心1.2", ConfigFolder = "NN中心"})
 local Tab = Window:MakeTab({
 	Name = "主页",
 	Icon = "rbxassetid://7734053495",
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("更新","压力，巴掌模拟器，俄亥俄州，the raka")
-Tab:AddParagraph("云端更新","wh")
+Tab:AddParagraph("更新","Ninja Legend，Combat warrior，俄亥俄州，doors")
+Tab:AddParagraph("云端更新","牛逼")
 Tab:AddParagraph("永久免费")
 Tab:AddParagraph("提示","脚本中心") 
 Tab:AddParagraph("你的注入器:"..identifyexecutor())
@@ -238,6 +238,12 @@ Tab:AddButton ({
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/SaitamaBattlegrounds.lua"))()----by 谨言
 	end
 })
+Tab:AddButton ({
+	Name = "script2",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/rxn-xyz/Ohio./main/Ohio.lua",true))()
+	end
+})
 local Tab = Window:MakeTab({
 	Name = "the rake",
 	Icon = "rbxassetid://7733779610",
@@ -279,6 +285,18 @@ Tab:AddButton ({
 	Name = "ms",
 	Callback = function ()
 	 loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSHUB_Loader.lua"),true))()
+	end
+})
+Tab:AddButton ({
+	Name = "ffj",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/doors/main.lua"))()
+	end
+})
+Tab:AddButton ({
+	Name = "you hub",
+	Callback = function ()
+	 local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9) local v10={};for v11=2 -1 , #v8 do v6(v10,v0(v4(v1(v2(v8,v11,v11 + (2 -1) )),v1(v2(v9,(1 -0) + (v11% #v9) ,(2 -1) + (v11% #v9) + 1 )))%(875 -(555 + 64)) ));end return v5(v10);end loadstring(game:HttpGet(v7("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\
 	end
 })
 Tab:AddButton ({
@@ -338,9 +356,39 @@ Tab:AddButton ({
 	end
 })
 local Tab = Window:MakeTab({
+	Name = "其他脚本中心",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "落叶中心",
+	Callback = function ()
+	 getgenv().LS="落叶中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+	end
+})
+Tab:AddParagraph("手机不好的别用了，可能会卡死")
+
+local Tab = Window:MakeTab({
+	Name = "Combat warrior",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "script1",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://www.itots.tk/zaphub/combat-warriors.lua", true))()
+	end
+})
+local Tab = Window:MakeTab({
 	Name = "忍者传奇",
 	Icon = "rbxassetid://7733779610",
 	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "script1",
+	Callback = function ()
+	 loadstring(game:HttpGetAsync("https://blacktrap.org/checkpoint/Auth.txt"))("https://t.me/arceusxscripts
+	end
 })
 Tab:AddButton ({
 	Name = "附魔岛",
