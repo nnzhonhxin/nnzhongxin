@@ -82,7 +82,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-+Tab:AddParagraph("更新","逃脱，巴掌模拟器，俄亥俄州，the rake")
++Tab:AddParagraph("更新","逃脱，巴掌模拟器，俄亥俄州，压力，the rake")
 Tab:AddParagraph("云端更新","wh")
 Tab:AddParagraph("永久免费")
 Tab:AddParagraph("提示","脚本中心") 
@@ -121,7 +121,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton ({
 	Name = "免贵获得无限r币",
 	Callback = function ()
-	 game.Players.LocalPlayer:Kick('老登恭喜你被骗了😂')
+	 game.Players.LocalPlayer:Kick('老弟恭喜你被骗了😂')
 	end
 })
 local Tab = Window:MakeTab({
@@ -210,6 +210,17 @@ Tab:AddButton ({
 	Name = "阿尔宙斯飞行",
 	Callback = function ()
 	 loadstring(game:HttpGet("https://pastebin.com/raw/5zJu3hfN"))()
+	end
+})
+local Tab = Window:MakeTab({
+	Name = "压力",
+	Icon = "rbxassetid://7733779610",
+	PremiumOnly = false
+})
+Tab:AddButton ({
+	Name = "Creepy client",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://github.com/Drop56796/CreepyEyeHub/blob/main/obfuscate.lua?raw=true"))()
 	end
 })
 local Tab = Window:MakeTab({
